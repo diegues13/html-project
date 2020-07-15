@@ -6,6 +6,177 @@
     <meta name="author" content="Diego Mosquera">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tribute Page Nikola Tesla</title>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            font-size: 10px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.4rem;
+            color: #333;
+            margin: 0px;
+            padding: 0px;
+            background-color: #e7dfd5;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 0px;
+                margin: 0px;
+            }
+        }
+
+        #title {
+            font-size: 4rem;
+            text-align: center;
+            color: #204051;
+            font-family: "Grenze Gotisch", 'Times New Roman', Times, serif;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            margin: 0px;
+        }
+
+        @media (max-width: 600px) {
+            #title {
+                font-size: 3rem;
+            }
+        }
+
+        #main {
+            margin: 10px 10% 10px 10%;
+            background-color: #84a9ac;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        @media(max-width: 600px) {
+            #main {
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+
+        article {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0px;
+        }
+
+        @media (max-width: 600px) {
+            article {
+                margin: 0px 5px 0px 5px;
+                padding: 0px;
+            }
+        }
+
+        section {
+            background-color: #3b6978;
+            margin: 20px 10% 20px 10%;
+            padding: 20px;
+            color: #e7dfd5;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                font-size: 0.9rem;
+                margin: 10px 5px 10px 5px;
+                padding: 5px;
+            }
+        }
+
+        #image {
+            display: block;
+            max-width: 70%;
+            height: auto;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #e7dfd5;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 600px) {
+            #image {
+                max-width: 95%;
+            }
+        }
+
+
+        img:hover {
+            opacity: 95%;
+        }
+
+        section:hover {
+            opacity: 95%;
+        }
+
+        a:visited {
+            color: #204051;
+        }
+
+        #img-caption {
+            margin: 10px 10% 10px 10%;
+            font-size: 1rem;
+            text-align: center;
+            color: #204051;
+        }
+
+        @media (max-width: 600px) {
+            #img-caption {
+                font-size: 0.8rem;
+            }
+        }
+
+
+        dt {
+            font-weight: bolder;
+            line-height: 4;
+            text-transform: capitalize;
+        }
+
+        #sign {
+            text-align: right;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            h2 {
+                text-align: right;
+            }
+        }
+
+        p {
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            p {
+                font-size: 0.8rem;
+            }
+        }
+
+        a {
+            display: block;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            a {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -14,23 +185,28 @@
         <h1 id="title">Nikola Tesla</h1>
 
         <div id="img-div">
-            <img id="image" src="https://cdn.britannica.com/49/4649-050-BB5F0463/Nikola-Tesla.jpg"
-                alt="Normal Borlaug pic">
+            <img id="image" src="https://okdiario.com/img/2017/01/30/nikola-tesla-a-positivos.jpg"
+                alt="Nikola Tesla Picture">
             <figcaption id="img-caption">
                 Nikola Tesla, (born July 9/10, 1856, Smiljan, Austrian Empire [now in Croatia]—died January 7,
                 1943, New York, New York, U.S.)
             </figcaption>
         </div>
 
-        <section id="tribute-info">
-            <p>
-                Serbian American inventor and engineer who discovered and patented the rotating magnetic field, the
-                basis of most alternating-current machinery. He also developed the three-phase system of electric power
-                transmission. He immigrated to the United States in 1884 and sold the patent rights to his system of
-                alternating-current dynamos, transformers, and motors to George Westinghouse. In 1891 he invented the
-                Tesla coil, an induction coil widely used in radio technology.
-            </p>
-            <article>
+        <article id="tribute-info">
+            <section>
+                <h2>Introduction</h2>
+                <p>
+                    Serbian American inventor and engineer who discovered and patented the rotating magnetic field, the
+                    basis of most alternating-current machinery. He also developed the three-phase system of electric
+                    power
+                    transmission. He immigrated to the United States in 1884 and sold the patent rights to his system of
+                    alternating-current dynamos, transformers, and motors to George Westinghouse. In 1891 he invented
+                    the
+                    Tesla coil, an induction coil widely used in radio technology.
+                </p>
+            </section>
+            <section>
                 <h2>Tesla’s life</h2>
                 <dl>
                     <dt>
@@ -182,8 +358,8 @@
                     </dd>
 
                 </dl>
-            </article>
-            <article>
+            </section>
+            <section>
                 <h2>Tesla’s inventions</h2>
                 <dl>
                     <dt>
@@ -297,14 +473,72 @@
                         of information that could be communicated including voice messages, text and images. This
                         represented the world’s first communication resources, but it also showed that there was a
                         worldwide technology that could be used to connect the entire world.
+                    <dt>
+                        Long-Range Wireless Energy Transfer
+                    </dt>
+                    <dd>
+                        Tesla was researching how energy could be transferred wireless by using his accumulated
+                        knowledge on microwaves and radio. This also involved the creation of the Tesla Coil and
+                        magnifying transmitter. Tesla wanted to come up with a system where energy could be transmitted
+                        through long distances. To achieve this goal, he developed the Wardenclyffe Tower in Shoreham,
+                        Long Island. The role of this island was to function as wireless telecommunications resources
+                        and transmit electrical power. That said, JP Morgan who funded the development of the tower
+                        finally cut down the funding for the same. Since he was unable to find any additional
+                        financiers, he was inclined to stop the development of the tower. As a result, he was never able
+                        to achieve his goal of transmitting energy worldwide.
                     </dd>
-                </dl>
-            </article>
 
-        </section>
-        <a id="tribute-link" target="_blanck" href="https://www.britannica.com/biography/Nikola-Tesla">
-            Nikola Tesla biography
-        </a>
+                    <dt>
+                        Death ray
+                    </dt>
+                    <dd>
+                        Early in the 1930s, Tesla claimed to have come with a particle beam weapon. Theoretically
+                        speaking, this device would have been able of producing an intense and focused beam of energy.
+                        This energy could be sent across great distances to destroy armies, warplanes and more. Tesla
+                        advertised his technologies to various militaries all over the world, but never found the best
+                        financiers. According to Tesla, efforts had been made to steal the invention. His room was
+                        invaded, and his papers were scrutinized, but the perpetrators never found anything worth value.
+                    </dd>
+
+                    <dt>
+                        Tesla’s Oscillator
+                    </dt>
+                    <dd>
+                        In 1898, Tesla claimed to have developed and launched a small oscillating device that, when
+                        attached to a building, would shake it almost destroying everything around it. This device could
+                        essentially produce the same power as an earthquake. Upon realizing the potential side effects
+                        of owning such a technology, he informed his staff to destroy the technology. Some theorists
+                        still believe that the government continues to use his research in places such as the HAARP
+                        facility.
+                    </dd>
+
+                    <dt>
+                        Free Electricity System
+                    </dt>
+                    <dd>
+                        With financing from J.P Morgan, Tesla developed the Wardenclyffe Tower. This was a gigantic
+                        wireless transmission station that was found in New York in the early nineties. Morgan believed
+                        the Tower could transmit wireless resources all over the world. That said, Tesla had other
+                        plans. He intended to send messages, images and telephony all across the Atlantic to the UK.
+                        This would even be related to ships at sea based on his concepts of leveraging the Earth to
+                        conduct signals. If the project was successful, anyone could gain access to electricity, by
+                        simply inserting a rode into the ground. That said, free electricity is not profitable. This
+                        system could have serious ramifications for the energy supply in the world and Morgan refused to
+                        finance it.
+                    </dd>
+
+                </dl>
+            </section>
+            <a id="tribute-link" target="_blanck" href="https://www.britannica.com/biography/Nikola-Tesla">
+                Complete Nikola Tesla biography here
+            </a>
+
+            <p id="sign">
+                Code by <em>Diego Mosquera</em>
+            </p>
+
+        </article>
+
 
     </main>
 </body>
