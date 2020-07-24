@@ -5,36 +5,42 @@
 }
 
 .parent {
-    height: 100vh;
     border: 20px solid rgb(0, 0, 0);
     display: flex;
     flex-wrap: wrap;
 }
 
 .child1 {
-    flex: 1 1 300px;
+    flex: 1 1 400px;
     height: 200px;
     background-color: rgb(255, 0, 0);
+    margin: 10px;
 }
 
 .child2 {
-    flex: 1 1 300px;
+    flex: 1 1 400px;
     height: 200px;
     background-color: rgb(0, 255, 0);
+    margin: 10px;
 }
 
 .child3 {
-    flex: 1 1 300px;
+    flex: 1 1 400px;
     height: 200px;
     background-color: rgb(0, 0, 255);
+    margin: 10px;
 }
 
 .child4 {
     flex: 1 1 300px;
     height: 200px;
     background-color: rgb(0, 255, 255);
+    margin: 10px;
 }
 
-.div>h1 {
-    align-self: center;
+.child5 {
+    flex: 1 1 300px;
+    height: 200px;
+    background-color: rgb(255, 0, 255);
+    margin: 10px;
 }
