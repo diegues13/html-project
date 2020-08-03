@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Product Landing</title>
+    <meta charset="UTF-8">
+    <meta name="decription" content="This is a product landing page for freecodecamp">
+    <meta name="author" content="Diego Mosquera">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="product_landing_style.css">
+    <script src="https://kit.fontawesome.com/9266cf435d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <img id="header-img" class="img-logo" src="https://thumbs.dreamstime.com/b/vintage-beer-label-design-elements-logo-label-emblem-sign-menu-vintage-beer-label-design-elements-logo-label-emblem-sign-128741984.jpg" alt="Company Logo" height="200px">
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#products">Products</a></li>
+                <li><a class="nav-link" href="#information">Info</a></li>
+                <li><a class="nav-link" href="#videos">Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="box1">
+            <h1>OLD BREW BEER</h1>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label for="email">Enter your email</label>
+                <input id="email" type="email" name="email" placeholder="Your mail here" required>
+                <input type="submit" id="submit" value="Subscribe" class="button button1">
+            </form>
+        </section>
+
+        <section id="information" class="box2">
+            <h2>Characteristics</h2>
+            <article>
+                <i class="fas fa-paperclip"></i>
+                <h3>Appearance</h3>
+                <p>The first thing you experience when you get a beer is the appearance. You see the beer in the glass and take in how it looks. This is one of the reasons it is vital to use the proper glass for the beer.</p>
+            </article>
+            <article>
+                <i class="far fa-envelope"></i>
+                <h3>Aroma</h3>
+                <p>After you take in the appearance of the beer, aroma would be the next characteristic you should notice. Hold your once close to the surface of the beer, ideally inside the lip of a snifter or tulip glass. Take a deep breath in and notice
+                    all the aromas in the beer. </p>
+            </article>
+            <article>
+                <i class="far fa-paper-plane"></i>
+                <h3>Flavor and Mouthfeel</h3>
+                <p>After smelling the beer and taking in the aroma, tasting the beer is the next logical step. A good, full drink is taken, swished in the mouth, and swallowed. Note the flavors and feeling the beer gave. </p>
+            </article>
+        </section>
+
+        <section id="videos" class="box4">
+            <h2>Videos</h2>
+            <iframe class="video" id="video" width="220" height="150" src="https://www.youtube.com/embed/WzYqh_Q4EdA?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video" width="220" height="150" src="https://www.youtube.com/embed/xgrUCprTuUs?controls=0&amp;start=9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video" width="220" height="150" src="https://www.youtube.com/embed/kr8oGvTXZdg?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video" width="220" height="150" src="https://www.youtube.com/embed/o2VcqffbbH8?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section id="products" class="box3">
+            <h2>Products</h2>
+            <article class="polaroid">
+                <img class="img" src="https://cdnimg.webstaurantstore.com/uploads/buying_guide/2017/2/amber-american-lager.jpg" alt="pale ale beer">
+                <h3>Dark Lager</h3>
+                <p class="container">Amber lager features prevalent malt flavors with varying levels of hoppiness.</p>
+                <button type="button" class="button button1">Buy Now</button>
+            </article>
+            <article class="polaroid">
+                <img class="img" src="https://cdnimg.webstaurantstore.com/uploads/buying_guide/2017/2/american-amber-ale.jpg" alt="pale ale beer">
+                <h3>Pale Ale</h3>
+                <p class="container">American amber ale is a malty, medium-bodied beer with a caramel flavor and amber color.</p>
+                <button type="button" class="button button1">Buy Now</button>
+            </article>
+            <article class="polaroid">
+                <img class="img" src="https://cdnimg.webstaurantstore.com/uploads/buying_guide/2017/2/american-stout.jpg" alt="stout beer">
+                <h3>Stout</h3>
+                <p class="container">American stouts feature malt flavors working to create strong chocolate and coffee notes.</p>
+                <button class="button button1">Green</button>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <i class="fas fa-beer"></i>
+        <i class="fas fa-beer"></i>
+        <i class="fas fa-beer"></i>
+        <p id="sign">Code by <em>Diego Mosquera</em></p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    --col-1: #99b898;
+    --col-2: #feceab;
+    --col-3: #ff847c;
+    --col-4: #e84a5f;
+    /*
+    rgba(153, 184, 152, 0.2)
+    rgba(254, 206, 171, 0.2)
+    rgba(255, 132, 124, 0.2)
+    rgba(232, 74, 95, 0.2)
+    */
+}
+
+html {
+    font-size: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "box1 box1" "box2 box3" "box4 box4";
+    margin-top: 100px;
+}
+
+@media (max-width: 800px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "box1 box1" "box2 box3" "box4 box4";
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "box1" "box2" "box3" "box4";
+        margin-top: 100px;
+    }
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0px 5px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(153, 184, 152, 0.95);
+    z-index: 1
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: rgba(153, 184, 152, 0.2);
+}
+
+.img-logo {
+    border-radius: 50%;
+    height: 60px;
+    margin: 10px;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(to right, rgba(153, 184, 152, 0.7), rgba(255, 132, 124, 0.7), rgba(255, 132, 124, 0.6)), url(https://images.unsplash.com/photo-1415274878031-4078c05ea976?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box1 {
+    display: flex;
+    margin: 30px;
+    grid-area: box1;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+}
+
+.box2 {
+    display: flex;
+    margin: 0px 30px;
+    padding-top: 70px;
+    grid-area: box2;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.box3 {
+    display: flex;
+    margin: 0px 30px;
+    padding-top: 70px;
+    flex-wrap: wrap;
+    grid-area: box3;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.box4 {
+    display: flex;
+    margin: 0px 30px;
+    padding-top: 70px;
+    grid-area: box4;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    height: 15px;
+}
+
+.polaroid {
+    width: 35%;
+    background-color: rgba(254, 206, 171, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 30px 10px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    height: 380px;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.img {
+    width: 70%;
+    opacity: 90%;
+    margin-top: 10px;
+}
+
+.container {
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.button {
+    background-color: #ff847c;
+    border: none;
+    color: #feceab;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button1 {
+    background-color: #feceab;
+    color: black;
+    border: 1px solid #99b898;
+}
+
+.button1:hover {
+    background-color: #ff847c;
+    color: #feceab;
+}
+
+h1,
+h2,
+h3,
+label,
+input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Gochi Hand', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 4px;
+}
+
+.video {
+    margin: 20px;
+}
