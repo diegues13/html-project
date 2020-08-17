@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    /*Dark Theme Color Palette*/
+    --col-1: #000000;
+    --col-2: #FFFFFF;
+    --col-3: #121212;
+    --col-4: #3700B3;
+    --col-5: #BB86FC;
+    --col-6: #6200EE;
+    --col-7: #2D2D2D;
+    --col-8: #332940;
+}
+
+body {
+    font-size: calc(8px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.4em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    color: var(--col-2);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: var(--col-1);
+}
+
+#main-doc {
+    margin-left: 25%;
+}
+
+.main-section {
+    margin: 5px;
+    padding: 5px;
+}
+
+header {
+    margin: 20px 0px;
+    text-align: left;
+    font-size: 1.6em;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+
+h3 {
+    margin: 20px 0px;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+p {
+    margin: 10px 0px;
+}
+
+.list_title {
+    margin: 0;
+    font-size: 1.6em;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--col-5);
+    padding: 40px 0px;
+}
+
+#navbar {
+    position: fixed;
+    width: 20%;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background-color: var(--col-3);
+}
+
+#navbar a {
+    display: block;
+    margin: 0px;
+    padding: 1.5em 30px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--col-5);
+    border-top: 1px solid;
+    border-color: var(--col-8);
+}
+
+footer {
+    margin-left: 25%;
+    text-align: right;
+    font-weight: bold;
+    color: var(--col-5);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: calc(12px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+        line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    }
+    #main-doc {
+        margin: 0;
+        padding: 1em 1em;
+    }
+    #navbar {
+        position: static;
+        width: 100%;
+    }
+    .list_title {
+        padding: 20px 0px;
+        background-color: var(--col-4);
+        color: var(--col-2);
+    }
+    #navbar a {
+        display: flex;
+        flex-direction: column;
+        padding: 0.6em 0em;
+        cursor: pointer;
+        border-top: 0.5px solid;
+        border-color: var(--col-8);
+    }
+    footer {
+        margin: 0;
+        padding: 2em 0em;
+        text-align: center;
+        font-weight: bold;
+    }
+}
